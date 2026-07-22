@@ -6,6 +6,7 @@ export const services = [
     title: 'Surveillance & Perimeter Security',
     tagline: 'Protecting What Matters Most',
     icon: HiShieldCheck,
+    hero: 'from-blue-900 via-blue-800 to-indigo-900',
     short: 'CCTV, electric fencing and perimeter protection for properties of all sizes.',
     description:
       'Dependable surveillance and perimeter security solutions for homes, offices, apartment complexes, construction sites, commercial properties and industrial facilities. Our systems combine clear visibility, early intrusion detection and strong physical deterrence.',
@@ -42,6 +43,7 @@ export const services = [
     title: 'Access Control & Entrance Automation',
     tagline: 'Smarter Access. Greater Control.',
     icon: HiLockClosed,
+    hero: 'from-gray-900 via-slate-800 to-gray-800',
     short: 'Automated gates, biometric access, video intercom and electronic locks.',
     description:
       'Modern entrance and access solutions that help property owners manage movement, verify visitors and improve security. Suitable for private homes, apartment buildings, offices, hotels, commercial properties and industrial facilities.',
@@ -84,6 +86,7 @@ export const services = [
     title: 'Networking & Structured Cabling',
     tagline: 'Reliable Connections. Smarter Spaces.',
     icon: HiWifi,
+    hero: 'from-teal-900 via-teal-800 to-cyan-900',
     short: 'Structured cabling, voice/data networks and Wi-Fi for apartments and offices.',
     description:
       'Structured networking systems that support smooth communication, fast data transfer and reliable connectivity across apartments, offices and commercial properties. Carefully planned to keep cables organised and infrastructure ready for future expansion.',
@@ -124,6 +127,7 @@ export const services = [
     title: 'TV, Satellite & Integrated Technology',
     tagline: 'Clear Entertainment. Connected Living.',
     icon: HiTv,
+    hero: 'from-purple-900 via-purple-800 to-pink-900',
     short: 'TV, satellite, audio-visual and fully integrated smart systems.',
     description:
       'Professionally designed TV, satellite and audio-visual networking systems for apartments, offices, hotels, homes and commercial properties. Centralised solutions deliver clear signals while reducing unnecessary cabling and maintenance challenges.',
