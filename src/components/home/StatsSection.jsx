@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { HiShieldCheck, HiHome, HiBuildingOffice, HiUserGroup } from 'react-icons/hi2'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import CountUp from '../CountUp'
 
 const stats = [
   { icon: HiShieldCheck, value: '10+', label: 'Years of Experience' },
@@ -25,7 +26,7 @@ function StatItem({ icon: Icon, value, label, index }) {
       <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
         <Icon className="w-7 h-7 text-primary" />
       </div>
-      <span className="text-3xl font-extrabold text-gray-900">{value}</span>
+      <CountUp value={value} className="text-3xl font-extrabold text-gray-900" />
       <span className="text-sm text-gray-500 mt-1">{label}</span>
     </motion.div>
   )

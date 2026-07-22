@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { HiArrowRight, HiShieldCheck, HiAcademicCap, HiWrenchScrewdriver, HiLifebuoy, HiHome, HiBuildingOffice2, HiCog6Tooth, HiCheck } from 'react-icons/hi2'
+import CountUp from '../components/CountUp'
 import { services } from '../data/servicesData'
 import ServiceCard from '../components/services/ServiceCard'
 
@@ -129,7 +130,7 @@ export default function Services() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
                   <s.icon className="w-6 h-6 text-primary" />
                 </div>
-                <p className="text-2xl font-extrabold text-gray-900">{s.value}</p>
+                <CountUp value={s.value} className="text-2xl font-extrabold text-gray-900" />
                 <p className="text-sm text-gray-500">{s.label}</p>
               </FadeIn>
             ))}
