@@ -4,7 +4,7 @@ import { HiArrowRight } from 'react-icons/hi2'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[50vh] md:min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/35400649/pexels-photo-35400649.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
@@ -41,7 +41,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed"
+            className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed hidden sm:block"
           >
             Security, Automation, Networking and Smart Infrastructure Solutions for
             residential, commercial and industrial properties across Ghana.
