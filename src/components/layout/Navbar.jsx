@@ -15,7 +15,7 @@ const links = [
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services', hasDropdown: true },
   { to: '/projects', label: 'Projects' },
-  { to: '/contact', label: 'Contact Us' },
+  { to: '/contact', label: 'Contact Us', isCta: true },
 ]
 
 export default function Navbar() {
@@ -91,11 +91,13 @@ export default function Navbar() {
                   to={l.to}
                   end={l.to === '/'}
                   className={({ isActive }) =>
-                    `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-primary/10 text-primary'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`
+                    l.isCta
+                      ? 'ml-2 px-5 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors shadow-sm'
+                      : `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          isActive
+                            ? 'bg-primary/10 text-primary'
+                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`
                   }
                 >
                   {l.label}
@@ -166,11 +168,13 @@ export default function Navbar() {
                 end={l.to === '/'}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`
+                  l.isCta
+                    ? 'block mt-2 px-4 py-3 bg-primary text-white text-sm font-semibold rounded-lg text-center'
+                    : `block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                        isActive
+                          ? 'bg-primary/10 text-primary'
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                      }`
                 }
               >
                 {l.label}
