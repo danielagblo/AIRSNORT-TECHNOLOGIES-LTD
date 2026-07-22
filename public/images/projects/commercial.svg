@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="o" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <rect x="40" y="40" width="720" height="720" rx="24" fill="url(#o)"/>
+  <rect x="300" y="200" width="200" height="240" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <rect x="340" y="240" width="120" height="80" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="340" y1="250" x2="460" y2="250" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="340" y1="265" x2="440" y2="265" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <line x1="340" y1="278" x2="420" y2="278" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <rect x="340" y="340" width="120" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <rect x="340" y="355" width="80" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="340" y="370" width="100" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="340" y="390" width="90" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="340" y="405" width="110" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <text x="400" y="510" text-anchor="middle" fill="white" font-size="22" font-family="Inter,sans-serif" font-weight="700">Commercial Property Projects</text>
+  <text x="400" y="545" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="13" font-family="Inter,sans-serif">Networking and CCTV installations</text>
+</svg>
