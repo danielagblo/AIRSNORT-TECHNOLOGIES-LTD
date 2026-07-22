@@ -15,7 +15,7 @@ const links = [
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services', hasDropdown: true },
   { to: '/projects', label: 'Projects' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/contact', label: 'Contact Us' },
 ]
 
 export default function Navbar() {
@@ -102,12 +102,6 @@ export default function Navbar() {
                 </NavLink>
               )
             })}
-            <Link
-              to="/contact"
-              className="ml-3 px-5 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors shadow-sm"
-            >
-              Get a Quote
-            </Link>
           </div>
 
           <button
@@ -183,13 +177,6 @@ export default function Navbar() {
               </NavLink>
             )
           })}
-          <Link
-            to="/contact"
-            onClick={() => setOpen(false)}
-            className="block mt-2 px-4 py-3 bg-primary text-white text-sm font-semibold rounded-lg text-center"
-          >
-            Get a Quote
-          </Link>
         </div>
       )}
     </nav>
