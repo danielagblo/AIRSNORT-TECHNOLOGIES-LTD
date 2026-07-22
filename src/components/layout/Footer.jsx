@@ -110,6 +110,14 @@ export default function Footer() {
             Residential | Commercial | Industrial
           </p>
         </div>
+        <div className="text-center mt-4">
+          <p className="text-xs text-gray-600">
+            Designed by{' '}
+            <a href="http://skytechghana.com/" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:underline">
+              Sky Tech Ghana
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )
