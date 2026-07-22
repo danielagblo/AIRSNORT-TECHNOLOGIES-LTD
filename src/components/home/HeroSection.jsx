@@ -9,7 +9,7 @@ export default function HeroSection() {
         <img
           src="https://images.pexels.com/photos/35400649/pexels-photo-35400649.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover blur-sm"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-gray-900/50" />
       </div>
