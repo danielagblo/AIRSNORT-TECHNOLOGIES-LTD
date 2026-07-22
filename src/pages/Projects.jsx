@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import PhotoAlbum from 'react-photo-album'
+import 'react-photo-album/rows.css'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { projects } from '../data/projectsData'
@@ -50,11 +51,12 @@ export default function Projects() {
               targetRowHeight={250}
               onClick={({ index: i }) => setIndex(i)}
               render={{
-                photo: ({ photo, imageProps }) => (
-                  <div className="relative group cursor-pointer overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gray-200 rounded-xl flex items-center justify-center">
-                      <span className="text-gray-400 text-xs">Project Image</span>
-                    </div>
+                wrapper: ({ children, ...rest }, { photo }) => (
+                  <div
+                    {...rest}
+                    className={`${rest.className || ''} relative group cursor-pointer overflow-hidden rounded-xl`}
+                  >
+                    {children}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                       <div>
                         <p className="text-white text-sm font-semibold">{photo.title}</p>

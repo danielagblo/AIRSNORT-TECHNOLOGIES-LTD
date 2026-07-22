@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { HiArrowLeft } from 'react-icons/hi2'
 import { services } from '../data/servicesData'
+import ServiceTabBar from '../components/services/ServiceTabBar'
 import ServiceDetail from '../components/services/ServiceDetail'
 
 export default function ServiceDetailPage() {
@@ -32,16 +33,22 @@ export default function ServiceDetailPage() {
           >
             <Link
               to="/services"
-              className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-primary transition-colors mb-6"
+              className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-primary transition-colors mb-4"
             >
               <HiArrowLeft className="w-4 h-4" />
               All Services
             </Link>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">{service.title}</h1>
-            <p className="text-primary font-semibold text-sm mb-8">{service.tagline}</p>
           </motion.div>
 
-          <ServiceDetail service={service} index={0} />
+          <ServiceTabBar />
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <ServiceDetail service={service} index={0} />
+          </motion.div>
         </div>
       </section>
     </motion.div>
